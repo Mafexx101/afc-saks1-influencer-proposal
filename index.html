@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Partnership Proposal - @Afc_saks1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .logo-space {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 150px;
+            height: 60px;
+            border: 2px dashed rgba(255,255,255,0.5);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .verified-badge {
+            background: #1d9bf0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+        
+        .metrics-section {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            color: #64748b;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        
+        .metric-growth {
+            color: #10b981;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .metric-growth.negative {
+            color: #ef4444;
+        }
+        
+        h2 {
+            color: #1e3a8a;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+        
+        .value-prop-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 4px solid #8b5cf6;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .value-prop-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .value-prop-item p {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+        
+        .icon {
+            font-size: 1.5em;
+        }
+        
+        .why-partner {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .why-partner ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .why-partner li {
+            padding: 10px 0;
+            color: #1e3a8a;
+            font-weight: 500;
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+        
+        .why-partner li:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        .analytics-section {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+        }
+        
+        .analytics-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .analytics-images img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .opportunities {
+            grid-column: 1 / -1;
+            background: #fef3c7;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        .opportunities h2 {
+            color: #92400e;
+            border-bottom-color: #f59e0b;
+        }
+        
+        .opportunity-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .opportunity-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .opportunity-card h4 {
+            color: #92400e;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        .cta-section {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            border: none;
+            margin-bottom: 15px;
+        }
+        
+        .cta-highlights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .cta-highlight {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .cta-highlight strong {
+            font-size: 1.8em;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9em;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .opportunity-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-highlights {
+                grid-template-columns: 1fr;
+            }
+            
+            .analytics-images {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-space">YOUR LOGO HERE</div>
+            <h1>INFLUENCER PARTNERSHIP PROPOSAL</h1>
+            <div class="subtitle">
+                <strong>@Afc_saks1</strong> | Football & Sports Content Creator
+                <span class="verified-badge">✓ Verified</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="metrics-section">
+                    <h2>📊 Performance Metrics</h2>
+                    <p style="color: #64748b; margin-bottom: 15px;">3-Month Period (Oct 2025 - Jan 2026)</p>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">Total Impressions</div>
+                            <div class="metric-value">76.2M</div>
+                            <div class="metric-growth">↑ 27% Growth</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Total Engagements</div>
+                            <div class="metric-value">3.2M</div>
+                            <div class="metric-growth">↑ 1.7% Growth</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Engagement Rate</div>
+                            <div class="metric-value">4.3%</div>
+                            <div class="metric-growth">Above Industry Avg</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Profile Visits</div>
+                            <div class="metric-value">430.8K</div>
+                            <div class="metric-growth">↑ 27% Growth</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Verified Followers</div>
+                            <div class="metric-value">2.4K</div>
+                            <div class="metric-growth">188.1K Total</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Bookmarks</div>
+                            <div class="metric-value">113.6K</div>
+                            <div class="metric-growth">↑ 50% Growth</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Reposts</div>
+                            <div class="metric-value">60.4K</div>
+                            <div class="metric-growth">↑ 8.5% Growth</div>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <div class="metric-label">Likes</div>
+                            <div class="metric-value">478.5K</div>
+                            <div class="metric-growth">High Engagement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="right-column">
+                <h2>💼 Value Proposition</h2>
+                
+                <div class="value-prop-item">
+                    <h3><span class="icon">🎯</span> Premium Sports Content</h3>
+                    <p>Authentic football commentary & analysis with organic brand integration</p>
+                </div>
+                
+                <div class="value-prop-item">
+                    <h3><span class="icon">🎁</span> Engagement Campaigns</h3>
+                    <p>Contests, giveaways, and interactive polls driving user participation</p>
+                </div>
+                
+                <div class="value-prop-item">
+                    <h3><span class="icon">🤝</span> Strategic Collaborations</h3>
+                    <p>Cross-promotional opportunities and long-term partnerships</p>
+                </div>
+                
+                <div class="value-prop-item">
+                    <h3><span class="icon">🎰</span> Casino & iGaming</h3>
+                    <p>Subtle platform promotion with sports betting insights</p>
+                </div>
+                
+                <div class="why-partner">
+                    <h2 style="font-size: 1.3em; border: none; padding: 0;">Why Partner?</h2>
+                    <ul>
+                        <li>Proven 27% growth in reach & visibility</li>
+                        <li>4.3% engagement rate (industry leading)</li>
+                        <li>Verified credibility & trust</li>
+                        <li>Natural fit for iGaming content</li>
+                        <li>50% surge in high-value bookmarks</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Analytics Section -->
+            <div class="analytics-section">
+                <h2>📈 Real Analytics Data</h2>
+                <div class="analytics-images">
+                    <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/44b085ad-b34a-422e-a1bd-c63f0f5b80a3/2026-01-15T12-48-49-111Z-d46274cc-chat-image-1768481329092-0.jpg" alt="Account Analytics Overview">
+                    <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/44b085ad-b34a-422e-a1bd-c63f0f5b80a3/2026-01-15T12-48-49-234Z-f8eb9495-chat-image-1768481329215-1.jpg" alt="Detailed Engagement Metrics">
+                </div>
+            </div>
+            
+            <!-- Partnership Opportunities -->
+            <div class="opportunities">
+                <h2>🚀 Partnership Opportunities</h2>
+                <div class="opportunity-grid">
+                    <div class="opportunity-card">
+                        <div class="icon">📝</div>
+                        <h4>Sponsored Content Posts</h4>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="icon">🎉</div>
+                        <h4>Contest Hosting</h4>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="icon">📺</div>
+                        <h4>Live Event Coverage</h4>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="icon">⭐</div>
+                        <h4>Product Reviews</h4>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="icon">🔗</div>
+                        <h4>Affiliate Programs</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Ready to Amplify Your Brand?</h2>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">This partnership delivers measurable results</p>
+                
+                <div class="cta-highlights">
+                    <div class="cta-highlight">
+                        <strong>76.2M</strong>
+                        <div>Monthly Impressions</div>
+                    </div>
+                    <div class="cta-highlight">
+                        <strong>3.2M</strong>
+                        <div>Engaged Users</div>
+                    </div>
+                    <div class="cta-highlight">
+                        <strong>4.3%</strong>
+                        <div>Engagement Rate</div>
+                    </div>
+                    <div class="cta-highlight">
+                        <strong>✓</strong>
+                        <div>Verified Credibility</div>
+                    </div>
+                </div>
+                
+                <p style="font-size: 1.1em; margin-top: 20px;">
+                    <strong>Contact us to discuss campaign strategy, pricing & performance tracking</strong>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Data Period: October 2025 - January 2026 | Last Updated: January 2026
+        </div>
+    </div>
+</body>
+</html>
